@@ -7,4 +7,4 @@ const maxValue = (nums) => {
     return max
   };
 
-console.log(maxValue([1,2,3]))
+// console.log(maxValue([1,2,3]))
