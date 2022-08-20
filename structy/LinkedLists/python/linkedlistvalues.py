@@ -4,13 +4,12 @@ class Node:
     self.next = None
 
 def linked_list_values(head):
-#   vals = []
-#   current = head
-#   if current is None:
-#     print(current.val)
-#     vals.append(current.val)
-#     linked_list_values(current.next)
-#   return vals
+  vals = []
+  current = head
+  while current is not None:
+    vals.append(current.val)
+    current = current.next
+  return vals
 
 a = Node("a")
 b = Node("b")
