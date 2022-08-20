@@ -6,4 +6,4 @@ const isPrime = (n) => {
     return true
   };
 
-console.log(isPrime(1))
+// console.log(isPrime(1))
