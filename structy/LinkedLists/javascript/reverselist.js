@@ -6,29 +6,17 @@ class Node {
 }
 
 const reverseList = (head) => {
-    let current = head
     let prev = null
-    if (current.next === null) {
-        return current.val
-    }
-    while (current !== null) {
-        if (prev === null) {
-            current.next = null
-            prev = current
-            console.log("THIS SHOULD BE A", prev)
-            current = current.next
-            console.log("THIS IS THE CURRENT ON TOP", current)
-        } if (prev !== null) {
-            current.next = prev
-            prev = current
-            current = current.next
-            console.log("THIS IS THE CURRENT ON BOTTOM", current)
-        } if (current.next === null) {
+    let current = head
 
-        }
+    while(current !== null) {
+      const next = current.next
+      current.next = prev
+      prev = current
+      current = next
     }
-    //   return current.val
-};
+    return prev
+  };
 
 const p = new Node("p");
 const a = new Node("a");
